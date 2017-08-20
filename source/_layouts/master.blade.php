@@ -15,5 +15,7 @@
         @include('_partials.nav')
         @yield('body')
         @include('_partials.footer')
+
+        <script type="text/javascript" src="{{ $page->cache_bust('/js/nav.js') }}"></script>
     </body>
 </html>

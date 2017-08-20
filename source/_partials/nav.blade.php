@@ -5,14 +5,14 @@
                 {{ $page->myName }}
             </a>
 
-            <div class="navbar-burger burger" data-target="navMenubd-example">
+            <div class="navbar-burger burger" data-target="navMenu">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
         </div>
 
-        <div class="navbar-menu">
+        <div class="navbar-menu" id="navMenu">
             <div class="navbar-end">
                 <a href="/" class="navbar-item {{ $page->selected('about') }}">
                     About

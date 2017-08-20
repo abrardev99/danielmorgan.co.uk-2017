@@ -18,13 +18,13 @@ body {
   font-weight: bold;
 }
 
-a.navbar-item.is-active:hover, .navbar-link.is-active:hover {
-  background-color: $primary;
-  color: lighten(findColorInvert($primary), 50%);
+a.navbar-item.is-active:not(:hover), .navbar-link.is-active:not(:hover) {
+  background-color: transparentize($primary, 0.9);
+  color: $primary;
 }
 
-a.navbar-item.is-active:not(:hover), .navbar-link.is-active:not(:hover) {
-  background-color: $primary;
+a.navbar-item.is-active:hover, .navbar-link.is-active:hover {
+  color: $primary;
 }
 
 a.navbar-item.is-active, .navbar-link.is-active {

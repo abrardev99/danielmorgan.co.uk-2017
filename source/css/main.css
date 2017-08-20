@@ -12226,13 +12226,13 @@ body {
   font-weight: bold;
 }
 
-a.navbar-item.is-active:hover, .navbar-link.is-active:hover {
-  background-color: #3273dc;
-  color: white;
+a.navbar-item.is-active:not(:hover), .navbar-link.is-active:not(:hover) {
+  background-color: rgba(50, 115, 220, 0.1);
+  color: #3273dc;
 }
 
-a.navbar-item.is-active:not(:hover), .navbar-link.is-active:not(:hover) {
-  background-color: #3273dc;
+a.navbar-item.is-active:hover, .navbar-link.is-active:hover {
+  color: #3273dc;
 }
 
 a.navbar-item.is-active, .navbar-link.is-active {
