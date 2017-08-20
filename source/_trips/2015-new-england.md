@@ -4,7 +4,6 @@ title: New England in the fall
 year: 2015
 month: 11
 summary: Taking in the fall foliage of so-called "New" England, driving what was possibly the ugliest car ever made. It was all Halloween, Stephen King and headless horsemen.
-posted_on: 2017-08-20
 section: content
 ---
 

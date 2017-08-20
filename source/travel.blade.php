@@ -21,7 +21,7 @@
                     <ul class="timeline">
                         @foreach ($trips->map->year->unique()->reverse() as $year)
                             <li class="timeline-header">
-                                <span class="button is-light">{{ $year }}</span>
+                                <span class="button is-dark">{{ $year }}</span>
                             </li>
 
                             @foreach ($page->tripsInYear($trips, $year) as $trip)
