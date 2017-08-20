@@ -6,4 +6,4 @@ posted_on: 2017-08-20
 section: content
 ---
 
-![](/media/trips/2015-italy/IMG_4180.JPG)
+![](/media/trips/2015-italy/IMG_4180.jpg)
