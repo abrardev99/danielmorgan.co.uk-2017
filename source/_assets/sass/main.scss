@@ -1,10 +1,25 @@
 @import './fonts';
 @import './variables';
-@import "../../../node_modules/bulma/bulma";
+@import '../../../node_modules/bulma/bulma';
+@import '../../../node_modules/font-awesome/scss/font-awesome';
 
 * { box-sizing: border-box; }
 
 body {
   font-size: 16px;
   font-family: $family-primary;
+}
+
+.navbar {
+  border-bottom: 1px solid $grey-lighter;
+}
+
+.logo {
+  color: $primary;
+  font-size: $size-5;
+  font-weight: bold;
+}
+
+.bio .title {
+  color: $primary;
 }

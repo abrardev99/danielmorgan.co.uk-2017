@@ -16,7 +16,8 @@ elixir(function(mix) {
             port: port,
             server: { baseDir: 'build_' + env },
             proxy: null,
-            files: [ 'build_' + env + '/**/*' ]
+            files: [ 'build_' + env + '/**/*' ],
+            notify: false
         });
 });
 

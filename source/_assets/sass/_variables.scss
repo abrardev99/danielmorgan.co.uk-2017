@@ -1,5 +1,4 @@
-@import "../../../node_modules/bulma/sass/utilities/initial-variables";
+@import '../../../node_modules/bulma/sass/utilities/initial-variables';
 
 $family-sans-serif: 'avenir next', Helvetica, Arial, sans-serif;
-$white-ter: hsl(210, 60%, 96%);
-$body-background-color: $white-ter;
+$primary: $turquoise;

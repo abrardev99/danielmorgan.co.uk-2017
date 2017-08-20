@@ -6,9 +6,11 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <link rel="stylesheet" href="/css/main.css">
 
-        <title>Daniel Morgan</title>
+        <title>{{ $page->myName }}</title>
     </head>
     <body>
+        @include('_partials.nav')
         @yield('body')
+        @include('_partials.footer')
     </body>
 </html>
