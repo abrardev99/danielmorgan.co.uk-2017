@@ -6,7 +6,8 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
 
-        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="{{ $page->cache_bust('/css/main.css') }}">
+        <link rel="shortcut-icon" href="{{ $page->cache_bust('/favicon.ico') }}">
 
         <title>{{ $page->myName }}</title>
     </head>

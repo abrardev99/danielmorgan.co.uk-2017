@@ -32,4 +32,12 @@ return [
         })->reverse();
     },
 
+    'cache_bust' => function ($page, $filePath) {
+        if ($page->production) {
+            return $filePath . '?v=' . $page->version;
+        }
+
+        return $filePath;
+    },
+
 ];
