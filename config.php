@@ -9,10 +9,9 @@ return [
     'myName' => 'Daniel Morgan',
 
     'collections' => [
-        'projects',
-
         'trips' => [
             'path' => 'travel/{filename}',
+            'sort' => ['year', 'month'],
         ],
     ],
 
