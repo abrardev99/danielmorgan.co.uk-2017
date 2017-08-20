@@ -10,18 +10,10 @@ body {
   font-family: $family-primary;
 }
 
-.navbar {
-  border-bottom: 1px solid $grey-lighter;
-}
-
 .logo {
   color: $primary;
   font-size: $size-5;
   font-weight: bold;
-}
-
-.bio .title {
-  color: $primary;
 }
 
 a.navbar-item.is-active:not(:hover), .navbar-link.is-active:not(:hover) {
