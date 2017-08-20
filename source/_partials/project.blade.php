@@ -19,8 +19,13 @@
         </div>
     </div>
 
-    <h2 class="title is-size-3">{{ $project->title }}</h2>
+    <h2 class="title is-size-3">
+        <a href="{{ $project->getPath() }}">
+            {{ $project->title }}
+        </a>
+    </h2>
     <hr>
 
     <div class="content">{!! $project->getContent() !!}</div>
+
 </article>

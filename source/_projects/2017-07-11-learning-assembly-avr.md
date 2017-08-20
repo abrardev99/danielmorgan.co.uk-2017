@@ -1,4 +1,6 @@
 ---
+extends: _layouts.project
+section: content
 title: Learning assembly with an AVR MCU
 date: 2017-07-11
 tags:

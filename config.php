@@ -10,6 +10,7 @@ return [
 
     'collections' => [
         'projects' => [
+            'path' => 'projects/{filename}',
             'sort' => ['-date'],
         ],
 
