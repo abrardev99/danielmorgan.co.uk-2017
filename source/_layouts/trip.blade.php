@@ -9,9 +9,9 @@
             </div>
         </div>
 
-        <div class="hero-foot">
+        <div class="hero-foot trip-switcher">
             <div class="container">
-                <div class="level trip-switcher">
+                <div class="level">
                     <div class="level-left">
                         @if ($page->getNext())
                             <a href="{{ $page->getNext()->getPath() }}" class="level-item">

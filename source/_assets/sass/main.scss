@@ -32,5 +32,7 @@ a.navbar-item.is-active, .navbar-link.is-active {
 }
 
 .trip-switcher {
-  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-top: 1px solid hsla(0, 0, 100%, 0.25);
 }
