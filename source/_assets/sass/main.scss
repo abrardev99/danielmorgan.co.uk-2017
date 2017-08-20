@@ -23,3 +23,10 @@ body {
 .bio .title {
   color: $primary;
 }
+
+a.navbar-item.is-active:not(:hover), .navbar-link.is-active:not(:hover) {
+  background-color: $primary;
+}
+a.navbar-item.is-active, .navbar-link.is-active {
+  color: findColorInvert($primary);
+}
