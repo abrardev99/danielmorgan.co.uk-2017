@@ -14,11 +14,14 @@
 
         <div class="navbar-menu" id="navMenu">
             <div class="navbar-end">
-                <a href="/" class="navbar-item {{ $page->selected('about') }}">
-                    About
+                <a href="/" class="navbar-item {{ $page->selected('projects') }}">
+                    Projects
                 </a>
                 <a href="/travel" class="navbar-item {{ $page->selected('travel') }}">
                     Travel
+                </a>
+                <a href="/about" class="navbar-item {{ $page->selected('about') }}">
+                    About
                 </a>
             </div>
         </div>

@@ -12226,6 +12226,11 @@ body {
   font-weight: bold;
 }
 
+.is-secondary {
+  background-color: #b86bff;
+  color: #fff;
+}
+
 a.navbar-item.is-active:not(:hover), .navbar-link.is-active:not(:hover) {
   background-color: rgba(50, 115, 220, 0.1);
   color: #3273dc;
@@ -12243,6 +12248,14 @@ a.navbar-item.is-active, .navbar-link.is-active {
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+twitterwidget {
+  margin: 2rem auto;
+}
+
+.project .title {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=main.css.map */

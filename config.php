@@ -9,6 +9,10 @@ return [
     'myName' => 'Daniel Morgan',
 
     'collections' => [
+        'projects' => [
+            'sort' => ['-date'],
+        ],
+
         'trips' => [
             'path' => 'travel/{filename}',
             'sort' => ['year', 'month'],
@@ -16,8 +20,9 @@ return [
     ],
 
     'selected' => function ($page, $section) {
+        $homePage = 'projects';
         $className = 'is-active';
-        if ($page->getPath() === '' && $section === 'about') {
+        if ($page->getPath() === '' && $section === $homePage) {
             return $className;
         }
         return str_contains($page->getPath(), $section) ? $className : '';

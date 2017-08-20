@@ -18,6 +18,11 @@ body {
   font-weight: bold;
 }
 
+.is-secondary {
+  background-color: $secondary;
+  color: findColorInvert($secondary);
+}
+
 a.navbar-item.is-active:not(:hover), .navbar-link.is-active:not(:hover) {
   background-color: transparentize($primary, 0.9);
   color: $primary;
@@ -35,4 +40,12 @@ a.navbar-item.is-active, .navbar-link.is-active {
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-top: 1px solid hsla(0, 0, 100%, 0.25);
+}
+
+twitterwidget {
+  margin: 2rem auto;
+}
+
+.project .title {
+  font-weight: bold;
 }
