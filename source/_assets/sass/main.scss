@@ -1,7 +1,9 @@
+@charset 'utf-8';
 @import './fonts';
 @import './variables';
 @import '../../../node_modules/bulma/bulma';
 @import '../../../node_modules/font-awesome/scss/font-awesome';
+@import './vendor/timeline';
 
 * { box-sizing: border-box; }
 
@@ -16,9 +18,19 @@ body {
   font-weight: bold;
 }
 
+a.navbar-item.is-active:hover, .navbar-link.is-active:hover {
+  background-color: $primary;
+  color: lighten(findColorInvert($primary), 50%);
+}
+
 a.navbar-item.is-active:not(:hover), .navbar-link.is-active:not(:hover) {
   background-color: $primary;
 }
+
 a.navbar-item.is-active, .navbar-link.is-active {
   color: findColorInvert($primary);
+}
+
+.trip-switcher {
+  margin-bottom: 1rem;
 }

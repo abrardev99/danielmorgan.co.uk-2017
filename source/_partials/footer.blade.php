@@ -16,7 +16,7 @@
                 </a>
             </p>
             <p class="is-size-7">
-                The opinions expressed on this site are those of <em>your</em> employer.
+                The opinions expressed on this site are those of my employer.
             </p>
         </div>
     </div>

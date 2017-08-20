@@ -1,11 +1,11 @@
 @extends('_layouts.master')
 
 @section('body')
-    <section class="hero is-light">
+    <section class="hero is-primary is-bold">
         <div class="hero-body">
             <div class="container">
                 <h1 class="title">
-                    Travels
+                    Road trips
                 </h1>
                 <p class="subtitle">
                     I lost all my old travel blogs recently, so I'm going to start piecing them together from backups and put some photos up on this site.
@@ -16,19 +16,37 @@
 
     <section class="section">
         <div class="container">
-            @foreach ($trips->map->year->unique()->reverse() as $year)
-                <h1 class="is-size-2">{{ $year }}</h1>
+            <div class="columns">
+                <div class="column is-two-thirds-desktop">
+                    <ul class="timeline">
+                        @foreach ($trips->map->year->unique()->reverse() as $year)
+                            <li class="timeline-header">
+                                <span class="button is-light">{{ $year }}</span>
+                            </li>
 
-                <div class="columns">
-                    @foreach ($page->tripsInYear($trips, $year) as $trip)
-                        <div class="column">
-                            <a href="{{ $trip->getPath() }}" class="tile subtitle notification is-primary">
-                                {{ $trip->title }}
-                            </a>
-                        </div>
-                    @endforeach
+                            @foreach ($page->tripsInYear($trips, $year) as $trip)
+                                <li class="timeline-item">
+                                    <div class="timeline-marker">
+                                        <a href="{{ $trip->getPath() }}">
+                                            <figure class="image is-32x32"></figure>
+                                        </a>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <p class="heading is-size-4">
+                                            <a href="{{ $trip->getPath() }}">
+                                                {{ $trip->title }}
+                                            </a>
+                                        </p>
+                                        <p>
+                                            {{ $trip->summary }}
+                                        </p>
+                                    </div>
+                                </li>
+                            @endforeach
+                        @endforeach
+                    </ul>
                 </div>
-            @endforeach
+            </div>
         </div>
     </section>
 @endsection
