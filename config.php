@@ -45,4 +45,13 @@ return [
         return $filePath;
     },
 
+    'allPhotos' => function ($page, $mediaPath) {
+        $markdown = '';
+        foreach (glob("source/$mediaPath/*") as $photo) {
+            $url = str_replace('source', '', $photo);
+            $markdown .= "[![]($url)]($url)";
+        }
+        return $markdown;
+    }
+
 ];
