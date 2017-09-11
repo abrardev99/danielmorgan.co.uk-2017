@@ -12,43 +12,39 @@
         <title>Daniel Morgan</title>
     </head>
     <body>
-        <nav class="navbar">
-    <div class="container">
-        <div class="navbar-brand">
-            <a class="logo navbar-item" href="/">
-                Daniel Morgan
-            </a>
+        <section class="hero is-dark">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-vcentered">
 
-            <div class="navbar-burger burger" data-target="navMenu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+                <div class="column is-clearfix has-text-centered has-text-left-desktop">
+                    <h1 class="my-name is-size-4">Daniel Morgan</h1>
+                </div>
 
-        <div class="navbar-menu" id="navMenu">
-            <div class="navbar-end">
-                <a href="/" class="navbar-item is-active">
-                    Projects
-                </a>
-                <a href="/travel" class="navbar-item ">
-                    Travel
-                </a>
-                <a href="/about" class="navbar-item ">
-                    About
-                </a>
+                <div class="column is-narrow has-text-centered">
+                    <a href="/" class="nav-link is-active">
+                        Projects
+                    </a>
+                    <a href="/travel" class="nav-link ">
+                        Travel
+                    </a>
+                    <a href="/about" class="nav-link ">
+                        About
+                    </a>
+                </div>
+
             </div>
         </div>
     </div>
-</nav>
+</section>
             <div class="container">
         <div class="columns">
             <div class="column is-10-desktop is-offset-1-desktop is-8-fullhd is-offset-2-fullhd">
 
                 <section class="section">
                     <article class="project">
-                        <div class="level">
-                            <div class="level-left">
+                        <div class="columns">
+                            <div class="column">
                                                                     <div class="level-item">
                                         <span class="tag is-light">Computer Science</span>
                                     </div>
@@ -57,7 +53,7 @@
                                     </div>
                                                             </div>
 
-                            <div class="level-right">
+                            <div class="column is-narrow">
                                 <div class="level-item">
                                     <i class="fa fa-calendar-o"></i>
                                 </div>
@@ -68,15 +64,15 @@
                         </div>
 
                         <h2 class="title is-size-3">Learning assembly with an AVR MCU</h2>
+
                         <hr>
 
                         <div class="content">
                             <p>In an effort to get a better understanding of how the code I write on a daily basis <em>really</em> works I decided to learn some assembly programming.</p>
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">High level languages are too productive, time to be a hipster: &quot;Beginner&#39;s introduction to AVR assembler language&quot; <a href="https://t.co/hZZEwpg54O">https://t.co/hZZEwpg54O</a> <a href="https://t.co/5iuZILvn5X">pic.twitter.com/5iuZILvn5X</a></p>&mdash; Daniel Morgan (@Morgan345) <a href="https://twitter.com/Morgan345/status/884888072458043392">July 11, 2017</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 <h2>What is Assembly?</h2>
 <p>The first realisation I had after deciding to try and learn this &quot;Assembly&quot; thing was that it isn't a single programming language. It's more like a class of language, designed to make writing instructions for a specific CPU manageable. It's one step removed from flipping the bits yourself.</p>
-<figure class="image">
+<figure class="has-shadow">
     <img src="/media/projects/2017-07-11-learning-assembly-avr/avr-instruction-ldi.png" alt="LDI instruction documentation">
     <figcaption>
       Figure 1: Mnemonics like LDI help you remember what instructions do
@@ -87,7 +83,7 @@
 <h2>Knowing the hardware</h2>
 <p>Next I discovered that I needed to know the capabilities of the hardware I wanted to program. I chose an AVR ATmega328P, which is the microcontroller (MCU) used on the Arduino Uno, and ordered one <a href="https://www.amazon.co.uk/gp/product/B00OZGWCWE/">from Amazon</a> with a few components to make wiring it up on a breadboard easier.</p>
 <p>I downloaded the <a href="http://www.atmel.com/images/Atmel-8271-8-bit-AVR-Microcontroller-ATmega48A-48PA-88A-88PA-168A-168PA-328-328P_datasheet_Complete.pdf">data sheet</a> and <a href="http://www.atmel.com/images/Atmel-0856-AVR-Instruction-Set-Manual.pdf">instruction set</a> PDFs and got to studying the architecture of the MCU. With that I learned what registers I had to store data in, how to read from and set the output of the pins, and how the timers work.</p>
-<figure class="image">
+<figure class="has-shadow">
     <img src="/media/projects/2017-07-11-learning-assembly-avr/atmega328w_pinout.png" alt="ATmega328p pinout diagram">
     <figcaption>
       Figure 2: ATmega328 pinout diagram
@@ -97,7 +93,7 @@
 <p><strong>Problem:</strong> How do I write assembly code on my modern 64-bit computer with 16GB RAM, then run it on this 8-bit MCU with just 32KB of program memory?</p>
 <p><strong>Quick solution:</strong> Use what was to hand - I popped the MCU into the DIP socket of an Arduino Uno and connected that to my computer via the Arduino's USB cable. I could program it but then I had to pop it out again and place it back in a breadboard to test anything.</p>
 <p><strong>Proper solution:</strong> The next day I ordered a <a href="https://www.amazon.co.uk/gp/product/B00AVRHVPO/">USB <abbr title="In-system programming">ISP</abbr> programmer</a> and wired it up directly.</p>
-<figure>
+<figure class="has-shadow">
     <img src="/media/projects/2017-07-11-learning-assembly-avr/USBASP-Atmega-Circuit.gif" alt="USB ISP pinout diagram">
     <figcaption>
       Figure 3: USB ISP pinout
@@ -198,17 +194,17 @@ LEDon:
     <div class="container">
         <div class="content has-text-centered">
             <p>
-                <a class="icon is-medium" href="https://twitter.com/morgan345">
-                    <i class="fa fa-twitter"></i>
+                <a class="is-medium" href="https://twitter.com/morgan345">
+                    <i class="icon icon-twitter"></i>
                 </a>
-                <a class="icon is-medium" href="https://github.com/danielmorgan">
-                    <i class="fa fa-github"></i>
+                <a class="is-medium" href="https://github.com/danielmorgan">
+                    <i class="icon icon-github"></i>
                 </a>
-                <a class="icon is-medium" href="https://www.linkedin.com/in/morgan345/">
-                    <i class="fa fa-linkedin"></i>
+                <a class="is-medium" href="https://www.linkedin.com/in/morgan345/">
+                    <i class="icon icon-linkedin"></i>
                 </a>
-                <a class="icon is-medium" href="mailto:me@danielmorgan.co.uk">
-                    <i class="fa fa-envelope"></i>
+                <a class="is-medium" href="mailto:me@danielmorgan.co.uk">
+                    <i class="icon icon-mail"></i>
                 </a>
             </p>
             <p class="is-size-7">
