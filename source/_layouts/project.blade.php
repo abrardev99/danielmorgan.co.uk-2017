@@ -7,8 +7,8 @@
 
                 <section class="section">
                     <article class="project">
-                        <div class="level">
-                            <div class="level-left">
+                        <div class="columns">
+                            <div class="column">
                                 @foreach ($page->tags as $tag)
                                     <div class="level-item">
                                         <span class="tag is-light">{{ $tag }}</span>
@@ -16,7 +16,7 @@
                                 @endforeach
                             </div>
 
-                            <div class="level-right">
+                            <div class="column is-narrow">
                                 <div class="level-item">
                                     <i class="fa fa-calendar-o"></i>
                                 </div>
@@ -27,6 +27,7 @@
                         </div>
 
                         <h2 class="title is-size-3">{{ $page->title }}</h2>
+
                         <hr>
 
                         <div class="content">

@@ -11,13 +11,12 @@ tags:
 In an effort to get a better understanding of how the code I write on a daily basis _really_ works I decided to learn some assembly programming.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">High level languages are too productive, time to be a hipster: &quot;Beginner&#39;s introduction to AVR assembler language&quot; <a href="https://t.co/hZZEwpg54O">https://t.co/hZZEwpg54O</a> <a href="https://t.co/5iuZILvn5X">pic.twitter.com/5iuZILvn5X</a></p>&mdash; Daniel Morgan (@Morgan345) <a href="https://twitter.com/Morgan345/status/884888072458043392">July 11, 2017</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## What is Assembly?
 
 The first realisation I had after deciding to try and learn this "Assembly" thing was that it isn't a single programming language. It's more like a class of language, designed to make writing instructions for a specific CPU manageable. It's one step removed from flipping the bits yourself.
 
-<figure class="image">
+<figure class="has-shadow">
     <img src="/media/projects/2017-07-11-learning-assembly-avr/avr-instruction-ldi.png" alt="LDI instruction documentation">
     <figcaption>
       Figure 1: Mnemonics like LDI help you remember what instructions do
@@ -34,7 +33,7 @@ Next I discovered that I needed to know the capabilities of the hardware I wante
 
 I downloaded the [data sheet](http://www.atmel.com/images/Atmel-8271-8-bit-AVR-Microcontroller-ATmega48A-48PA-88A-88PA-168A-168PA-328-328P_datasheet_Complete.pdf) and [instruction set](http://www.atmel.com/images/Atmel-0856-AVR-Instruction-Set-Manual.pdf) PDFs and got to studying the architecture of the MCU. With that I learned what registers I had to store data in, how to read from and set the output of the pins, and how the timers work.
 
-<figure class="image">
+<figure class="has-shadow">
     <img src="/media/projects/2017-07-11-learning-assembly-avr/atmega328w_pinout.png" alt="ATmega328p pinout diagram">
     <figcaption>
       Figure 2: ATmega328 pinout diagram
@@ -49,7 +48,7 @@ I downloaded the [data sheet](http://www.atmel.com/images/Atmel-8271-8-bit-AVR-M
 
 **Proper solution:** The next day I ordered a [USB <abbr title="In-system programming">ISP</abbr> programmer](https://www.amazon.co.uk/gp/product/B00AVRHVPO/) and wired it up directly.
 
-<figure>
+<figure class="has-shadow">
     <img src="/media/projects/2017-07-11-learning-assembly-avr/USBASP-Atmega-Circuit.gif" alt="USB ISP pinout diagram">
     <figcaption>
       Figure 3: USB ISP pinout

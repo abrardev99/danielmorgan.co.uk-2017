@@ -2,17 +2,17 @@
     <div class="container">
         <div class="content has-text-centered">
             <p>
-                <a class="icon is-medium" href="https://twitter.com/morgan345">
-                    <i class="fa fa-twitter"></i>
+                <a class="is-medium" href="https://twitter.com/morgan345">
+                    <i class="icon icon-twitter"></i>
                 </a>
-                <a class="icon is-medium" href="https://github.com/danielmorgan">
-                    <i class="fa fa-github"></i>
+                <a class="is-medium" href="https://github.com/danielmorgan">
+                    <i class="icon icon-github"></i>
                 </a>
-                <a class="icon is-medium" href="https://www.linkedin.com/in/morgan345/">
-                    <i class="fa fa-linkedin"></i>
+                <a class="is-medium" href="https://www.linkedin.com/in/morgan345/">
+                    <i class="icon icon-linkedin"></i>
                 </a>
-                <a class="icon is-medium" href="mailto:me@danielmorgan.co.uk">
-                    <i class="fa fa-envelope"></i>
+                <a class="is-medium" href="mailto:me@danielmorgan.co.uk">
+                    <i class="icon icon-mail"></i>
                 </a>
             </p>
             <p class="is-size-7">
