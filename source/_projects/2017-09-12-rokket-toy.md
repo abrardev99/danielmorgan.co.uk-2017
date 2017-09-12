@@ -12,6 +12,7 @@ I thought it would be fun to put the little bit of Unity and C# I've been learni
 Here's my wishlist of features:
 
 * [x] Orbit around the planet
+* [x] Implement inverse square law for gravity
 * [ ] Launch the rocket with angry birds inspired controls
 * [ ] Add some particle effects for the rocket exhaust
 * [ ] Atmospheric drag when close to the planet
@@ -23,7 +24,7 @@ Here's my wishlist of features:
 ## Videos
 
 <figure class="has-shadow">
-    <video width="480" controls>
+    <video controls>
         <source src="/media/projects/2017-09-12-rokket-toy/rokket-0.0.2.webm" type="video/webm">
     </video>
     <figcaption>
@@ -31,6 +32,16 @@ Here's my wishlist of features:
     </figcaption>
 </figure>
 
+<figure class="has-shadow">
+    <video controls>
+        <source src="/media/projects/2017-09-12-rokket-toy/rokket-0.0.3.webm" type="video/webm">
+    </video>
+    <figcaption>
+      v0.0.3
+    </figcaption>
+</figure>
+
 ## Playable builds
 
 * [v0.0.2 (2017-09-12)](/media/projects/2017-09-12-rokket-toy/0.0.2/index.html)
+* [v0.0.3 (2017-09-12)](/media/projects/2017-09-12-rokket-toy/0.0.3/index.html)
