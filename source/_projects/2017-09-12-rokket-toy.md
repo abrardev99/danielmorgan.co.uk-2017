@@ -41,7 +41,17 @@ Here's my wishlist of features:
     </figcaption>
 </figure>
 
+<figure class="has-shadow">
+    <video controls>
+        <source src="/media/projects/2017-09-12-rokket-toy/rokket-0.0.4.webm" type="video/webm">
+    </video>
+    <figcaption>
+      v0.0.4
+    </figcaption>
+</figure>
+
 ## Playable builds
 
 * [v0.0.2 (2017-09-12)](/media/projects/2017-09-12-rokket-toy/0.0.2/index.html)
 * [v0.0.3 (2017-09-12)](/media/projects/2017-09-12-rokket-toy/0.0.3/index.html)
+* [v0.0.4 (2017-09-13)](/media/projects/2017-09-12-rokket-toy/0.0.4/index.html)
