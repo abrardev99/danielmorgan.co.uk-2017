@@ -1,46 +1,25 @@
 @extends('_layouts.master')
 
 @section('body')
-    <div class="container">
-        <section class="section">
-            <div class="columns">
+    <section class="section">
+        <div class="container">
+            @foreach ($projects as $project)
+                <article class="project">
 
-                @foreach ($projects as $project)
-                    <div class="column is-narrow">
-                        <div class="box">
-                            <article class="project">
+                    @include('_partials.project-metadata', ['project' => $project])
 
-                                <div class="level is-hidden-mobile">
-                                    <div class="level-left">
-                                        @foreach ($project->tags as $tag)
-                                            <div class="level-item">
-                                                <span class="tag is-light">{{ $tag }}</span>
-                                            </div>
-                                        @endforeach
-                                    </div>
+                    <h2 class="title is-size-3">
+                        <a href="{{ $project->getPath() }}" class="is-black">
+                            {{ $project->title }}
+                        </a>
+                    </h2>
 
-                                    <div class="level-right">
-                                        <div class="level-item">
-                                            <i class="icon icon-calendar"></i>
-                                        </div>
-                                        <div class="level-item">
-                                            {{ date('Y-m-d', $project->date) }}
-                                        </div>
-                                    </div>
-                                </div>
+                </article>
 
-                                <h2 class="title is-size-4">
-                                    <a href="{{ $project->getPath() }}">
-                                        {{ $project->title }}
-                                    </a>
-                                </h2>
-
-                            </article>
-                        </div>
-                    </div>
-                @endforeach
-
-            </div>
-        </section>
-    </div>
+                @if (! $loop->last)
+                    <hr>
+                @endif
+            @endforeach
+        </div>
+    </section>
 @endsection
