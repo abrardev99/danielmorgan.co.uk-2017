@@ -8,7 +8,7 @@
 
                     @include('_partials.project-metadata', ['project' => $project])
 
-                    <h2 class="title is-size-3">
+                    <h2 class="title is-size-4">
                         <a href="{{ $project->getPath() }}" class="is-black">
                             {{ $project->title }}
                         </a>

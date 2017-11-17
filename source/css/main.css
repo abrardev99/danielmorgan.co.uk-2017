@@ -9230,7 +9230,6 @@ body {
 
 .my-name {
   font-size: 1.5rem;
-  font-weight: bold;
 }
 
 .is-secondary {
@@ -9257,12 +9256,8 @@ a.navbar-item.is-active, .navbar-link.is-active {
   border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-twitterwidget {
-  margin: 2rem auto;
-}
-
 .project .title {
-  font-weight: bold;
+  font-weight: normal;
 }
 
 figure.has-shadow img {
@@ -9284,6 +9279,10 @@ figure.has-shadow img {
 .nav-link:not(:last-child):after {
   content: "\2022";
   margin-left: 10px;
+}
+
+.media-embed {
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

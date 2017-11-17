@@ -142,7 +142,7 @@ The K-map "is a method of simplifying Boolean algebra expressions" ([wikipedia](
 
 I could try to badly explain this but it's a very visual thing (it takes advantage of our pattern matching ability) so I'll just link you to the series of videos I watched:
 
-<iframe type="text/html" width="640" height="360" src="https://www.youtube.com/embed/nwRkIbkc03g?autoplay=0" frameborder="0"></iframe>
+<iframe type="text/html" class="media-embed" width="480" height="270" src="https://www.youtube.com/embed/nwRkIbkc03g?autoplay=0" frameborder="0"></iframe>
 
 Lets use a K-map to simplify our Mux expression:
 
@@ -187,10 +187,10 @@ NOT          NAND
 
 in | out     a  | b  | out
 --------     -------------
-0 |  1      0  | 0  |  1
-            0  | 1  |  1
-            1  | 0  |  1
-1 |  0      1  | 1  |  0
+ 0 |  1      0  | 0  |  1
+             0  | 1  |  1
+             1  | 0  |  1
+ 1 |  0      1  | 1  |  0
 ```
 
 If in=0 then a=0 and b=0, so we get out=1.
