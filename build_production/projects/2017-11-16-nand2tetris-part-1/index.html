@@ -156,7 +156,7 @@ gray code | base ten
 <h2>Karnaugh map</h2>
 <p>The K-map &quot;is a method of simplifying Boolean algebra expressions&quot; (<a href="https://en.wikipedia.org/wiki/Karnaugh_map">wikipedia</a>). Sounds like just the thing. Simpler expression, simpler circuit.</p>
 <p>I could try to badly explain this but it's a very visual thing (it takes advantage of our pattern matching ability) so I'll just link you to the series of videos I watched:</p>
-<iframe type="text/html" width="640" height="360" src="https://www.youtube.com/embed/nwRkIbkc03g?autoplay=0" frameborder="0"></iframe>
+<iframe type="text/html" class="media-embed" width="480" height="270" src="https://www.youtube.com/embed/nwRkIbkc03g?autoplay=0" frameborder="0"></iframe>
 <p>Lets use a K-map to simplify our Mux expression:</p>
 <p><img src="/media/projects/2017-11-16-nand2tetris-part-1/mux-k-map.jpg" alt="Mux K-map" /></p>
 <p><strong>Q=(A.S')+(B.S)</strong></p>
@@ -183,10 +183,10 @@ CHIP Not {
 
 in | out     a  | b  | out
 --------     -------------
-0 |  1      0  | 0  |  1
-            0  | 1  |  1
-            1  | 0  |  1
-1 |  0      1  | 1  |  0</code></pre>
+ 0 |  1      0  | 0  |  1
+             0  | 1  |  1
+             1  | 0  |  1
+ 1 |  0      1  | 1  |  0</code></pre>
 <p>If in=0 then a=0 and b=0, so we get out=1.</p>
 <p>If in=1 then a=1 and b=1, so we get out=0.</p>
 <p>We've inverted the input.</p>
