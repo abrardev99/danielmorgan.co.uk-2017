@@ -1,5 +1,7 @@
 @extends('_layouts.master')
 
+@section('title', $page->title . ' - ' . $page->myName)
+
 @section('body')
     <div class="container">
         <div class="columns">

@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="{{ $page->cache_bust('/css/main.css') }}">
         <link rel="shortcut-icon" href="{{ $page->cache_bust('/favicon.ico') }}">
 
-        <title>{{ $page->myName }}</title>
+        <title>@yield('title', $page->myName)</title>
     </head>
     <body>
         @include('_partials.nav')
